@@ -310,6 +310,11 @@ const RULES_MAP = {
     fixerSelector: ".Message",
     fixerFunc: FIXER_BR,
   },
+  "lwn.net/Articles": {
+    selector: `h1, .CommentTitle, .ArticleText ${DEFAULT_SELECTOR}, .FormattedComment ${DEFAULT_SELECTOR}`,
+    fixerSelector: ".ArticleText, .FormattedComment",
+    fixerFunc: FIXER_BR,
+  },
 };
 
 const rules = Object.entries(RULES_MAP)
